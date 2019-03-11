@@ -1,0 +1,24 @@
+.top-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+
+.content-1 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 18rem);
+    margin: auto;
+    width: 44rem;
+}
+
+.content-2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}

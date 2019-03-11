@@ -1,0 +1,55 @@
+// THIS IS MY FONT IMPORT
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+// @font-face {
+//     font-family: "Dosis";
+//     src: url(../fonts/Dosis-Regular.ttf);
+// }
+
+.search-bar,
+.cart {
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 45%;
+        right: 15%;
+        transform: translateY(-50%);
+        font-size: 22px;
+        color: #ffffff;
+    }
+}
+
+.search-bar i {
+    right: 18%;
+}
+
+.cart i {
+    left: 28%;
+}
+
+.arrow {
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move 1s ease infinite;
+}
+
+@keyframes move {
+    0% {
+        bottom:3%;
+        opacity: 0;
+    }
+
+100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}

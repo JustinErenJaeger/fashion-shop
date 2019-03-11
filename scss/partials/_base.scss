@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../images/black-and-white-2558273_1920.jpg);
+    background-size: 100% 50rem;
+    height: 100vh;
+}
+
+nav {
+ 
+    padding-top: 3rem;
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 4rem;
+        padding: 0;
+
+        li {
+            text-transform: uppercase;
+            list-style: none;
+            display: inline-block;
+            font-family: 'Dosis', sans-serif;
+            font-size: 15px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            color: #ffffff;
+            width: 6rem;
+            margin-top: 1rem;
+        }
+    }
+}
+
+nav ul li:nth-child(4) {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    color: #fffefe;
+    position: relative;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    margin: 0 2rem;
+
+    span {
+        position: absolute;
+        top: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
