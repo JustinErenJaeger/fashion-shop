@@ -163,10 +163,11 @@ nav ul li:nth-child(4) {
 
 .imgBox-1 {
   width: 18rem;
-  height: 18rem;
+  height: 22rem;
   background: grey;
   margin: auto;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .imgBox-1 button {
     width: 60px;
     height: 25px;
@@ -181,6 +182,54 @@ nav ul li:nth-child(4) {
     position: absolute;
     top: 1rem;
     right: 0.5rem; }
+  .imgBox-1 .img {
+    width: 100%;
+    height: 18rem;
+    position: relative;
+    overflow: hidden; }
+    .imgBox-1 .img img {
+      width: 110%;
+      height: 18rem;
+      transition: all 0.5s ease-in-out; }
+    .imgBox-1 .img span {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.596);
+      width: 65%;
+      height: 65%;
+      transition: all 0.5s ease-in-out; }
+    .imgBox-1 .img .fade-1 {
+      border-left: 5px solid white;
+      border-bottom: 5px solid white;
+      top: 0;
+      right: 0; }
+    .imgBox-1 .img .fade-2 {
+      border-top: 5px solid white;
+      border-right: 5px solid white;
+      bottom: 0;
+      left: 0; }
+  .imgBox-1 p {
+    margin: 0;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2.4;
+    text-align: center;
+    color: #333333; }
+
+.imgBox-1:hover span {
+  width: 0;
+  height: 0; }
+
+.imgBox-1:hover img {
+  transform: scale(1.1); }
+
+.imgBox-1:hover .fade-1 {
+  border-left: 0px solid white;
+  border-bottom: 0px solid white; }
+
+.imgBox-1:hover .fade-2 {
+  border-top: 0px solid white;
+  border-left: 0px solid white; }
 
 .title-2 {
   width: 100%; }
@@ -235,7 +284,7 @@ nav {
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 18rem);
   margin: auto;
-  width: 44rem; }
+  width: 56rem; }
 
 .content-2 {
   display: grid;

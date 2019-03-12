@@ -101,10 +101,11 @@
 
 .imgBox-1 {
     width: 18rem;
-    height: 18rem;
+    height: 22rem;
     background: grey;
     margin: auto;
     position: relative;
+    overflow: hidden;
 
     button {
         width: 60px;
@@ -121,6 +122,72 @@
         top: 1rem;
         right: 0.5rem;
     }
+
+    .img {
+        width: 100%;
+        height: 18rem;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 110%;
+            height: 18rem;
+            transition: all 0.5s ease-in-out;
+        }
+
+        span {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.596);
+            width: 65%;
+            height: 65%;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .fade-1 {
+            border-left: 5px solid rgb(255, 255, 255);
+            border-bottom: 5px solid rgb(255, 255, 255);
+            top: 0;
+            right: 0;
+        }
+
+        
+        .fade-2 {
+            border-top: 5px solid rgb(255, 255, 255);
+            border-right: 5px solid rgb(255, 255, 255);
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    p {
+        margin: 0;
+        font-family: "Source Sans Pro";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 2.4;
+        text-align: center;
+        color: #333333;
+    }
+}
+
+.imgBox-1:hover span {
+    width: 0;
+    height: 0;
+}
+
+.imgBox-1:hover img {
+   transform: scale(1.1);
+}
+
+.imgBox-1:hover .fade-1 {
+    border-left: 0px solid rgb(255, 255, 255);
+    border-bottom: 0px solid rgb(255, 255, 255);
+}
+
+
+.imgBox-1:hover .fade-2 {
+    border-top: 0px solid rgb(255, 255, 255);
+    border-left: 0px solid rgb(255, 255, 255);
 }
 
 .title-2 {
