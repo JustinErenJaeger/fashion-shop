@@ -12,24 +12,11 @@
 
 .search-bar,
 .cart {
-    position: relative;
 
     i {
-        position: absolute;
-        top: 45%;
-        right: 15%;
-        transform: translateY(-50%);
         font-size: 22px;
         color: #ffffff;
     }
-}
-
-.search-bar i {
-    right: 18%;
-}
-
-.cart i {
-    left: 28%;
 }
 
 .arrow {
@@ -39,6 +26,7 @@
     font-size: 30px;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 20.75rem;
     animation: move 1s ease infinite;
 }
 
@@ -53,3 +41,5 @@
         opacity: 1;
     }
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////THIS IS THE ABOUT SECTION////////////////////////////////////////////////

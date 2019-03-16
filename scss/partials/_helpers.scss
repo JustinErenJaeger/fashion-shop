@@ -1,19 +1,18 @@
-.top-bar {
+.bar {
     width: 100%;
     height: 53px;
     background-color: #2d2827;
 
     div p {
-        text-align: center;
         font-family: "Source Sans Pro";
         color: #999999;
     }
 }
 
 .currency {
-    margin-left: 1rem;
     font-size: 12px;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
+    text-align: left;
 
     span {
 
@@ -21,7 +20,12 @@
 
         i {
             padding-left: 0.5rem;
+            background: white;
         }
+    }
+
+    span:nth-child(1) {
+        padding-left: 0;
     }
 }
 
@@ -32,47 +36,23 @@
     margin-top: 1rem;
 }
 
-.icons i {
-    padding: 0 0.5rem;
-    font-size: 15px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
+.icons {
+
+    padding-top: 0.2rem;
+    text-align: right;
+
+    i {
+        padding: 0 0.5rem;
+        font-size: 15px;
+    }
 }
 
-.head {
-    padding-top: 6rem;
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    color: #ffffff;
-
-    h1 {
-        font-size: 50px;
-        line-height: 0.96;
-        font-family: Dosis;
-    }
-
-    p {
-        font-family: "Source Sans Pro";
-        font-size: 15px;
-        line-height: 8px;
-        color: #e6e6e6;
-    }
-
-    button {
-        width: 150px;
-        height: 40px;
-        border-radius: 20px;
-        background-color: #a88d7b;
-        border: none;
-        font-size: 15px;
-        letter-spacing: 1.5px;
-        color: #ffffff;
-        margin-top: 4rem;
-    }
+.search-bar,
+.cart {
+  i {
+    background: white;
+    padding-left: 0.2rem;
+  }
 }
 
 .title-1 {
@@ -117,7 +97,7 @@ main p {
     color: #999999;
 }
 
-// THIS IS THE STYLES FOR THE THREE IMAGES DISPLAYED AS A GRID 
+// THIS IS THE STYLES FOR THE THREE IMAGES DISPLAYED AS A GRID
 .imgBox-1 {
     width: 23.125rem;
     height: 27.125rem;
@@ -156,25 +136,32 @@ main p {
 
         span {
             position: absolute;
-            background: rgba(0, 0, 0, 0.596);
-            width: 65%;
-            height: 65%;
+            background: rgba(0, 0, 0, 0.8);
+            width: 50%;
+            height: 50%;
             transition: all 0.5s ease-in-out;
         }
 
         .fade-1 {
-            border-left: 5px solid rgb(255, 255, 255);
-            border-bottom: 5px solid rgb(255, 255, 255);
             top: 0;
             right: 0;
         }
 
-        
+
         .fade-2 {
-            border-top: 5px solid rgb(255, 255, 255);
-            border-right: 5px solid rgb(255, 255, 255);
             bottom: 0;
             left: 0;
+        }
+
+        .fade-3 {
+            top: 0;
+            left: 0;
+        }
+
+
+        .fade-4 {
+            bottom: 0;
+            right: 0;
         }
     }
 }
@@ -182,21 +169,11 @@ main p {
 .imgBox-1:hover span {
     width: 0;
     height: 0;
+    // transform: rotateZ(45deg);
 }
 
 .imgBox-1:hover img {
    transform: scale(1.1) scaleX(1.2);
-}
-
-.imgBox-1:hover .fade-1 {
-    border-left: 0px solid rgb(255, 255, 255);
-    border-bottom: 0px solid rgb(255, 255, 255);
-}
-
-
-.imgBox-1:hover .fade-2 {
-    border-top: 0px solid rgb(255, 255, 255);
-    border-left: 0px solid rgb(255, 255, 255);
 }
 
 .title-2 {
@@ -229,6 +206,15 @@ main p {
     height: 29.3125rem;
     position: relative;
 
+    p {
+        font-family: "Source Sans Pro";
+        font-size: 25px;
+        line-height: 1.92;
+        letter-spacing: 2.5px;
+        text-align: center;
+        color: #a88d7b;
+    }
+
     .img-2 {
         width: 100%;
         height: 23.3125rem;
@@ -240,35 +226,40 @@ main p {
             height: 23.3125rem;
             transition: all 0.5s ease-in-out;
         }
-    
+
         span {
             position: absolute;
             background: rgba(0, 0, 0, 0.596);
-            width: 65%;
-            height: 65%;
-            transition: all 0.5s ease-in-out;
+            width: 0;
+            height: 25%;
+            transition: all 0.7s ease-in-out;
         }
-    
+
         .fade-1 {
-            border-left: 5px solid rgb(255, 255, 255);
-            border-bottom: 5px solid rgb(255, 255, 255);
             top: 0;
             right: 0;
+            width: 100%;
         }
-        
-        .fade-2 {
-            border-top: 5px solid rgb(255, 255, 255);
-            border-right: 5px solid rgb(255, 255, 255);
-            bottom: 0;
-            left: 0;
-        }    
-    }
-}
 
-.imgBox-2:hover span {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+        .fade-2 {
+            top: 25%;
+            left: 0;
+            width: 100%;
+        }
+
+        .fade-3 {
+            top: 50%;
+            right: 0;
+            width: 100%;
+        }
+
+
+        .fade-4 {
+            top: 75%;
+            left: 0;
+            width: 100%;
+        }
+    }
 }
 
 .imgBox-2:hover img {
@@ -276,14 +267,22 @@ main p {
 }
 
 .imgBox-2:hover .fade-1 {
-    border-left: 0px solid rgb(255, 255, 255);
-    border-bottom: 0px solid rgb(255, 255, 255);
+    width: 0;
 }
 
 .imgBox-2:hover .fade-2 {
-    border-top: 0px solid rgb(255, 255, 255);
-    border-left: 0px solid rgb(255, 255, 255);
+    width: 0;
 }
+
+.imgBox-2:hover .fade-3 {
+    width: 0;
+}
+
+.imgBox-2:hover .fade-4 {
+    width: 0;
+}
+
+
 
 // THIS IS THE STYLES FOR THE BLOG SECTION ON THE HOME PAGE
 .blog-section {
@@ -312,7 +311,7 @@ main p {
         font-size: 25px;
         font-weight: 600;
     }
-   
+
     p:nth-child(2) {
         font-size: 15px;
         text-align: left;
@@ -333,3 +332,5 @@ main p {
         color: #a88d7b;
     }
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////THIS IS THE ABOUT SECTION////////////////////////////////////////////////
