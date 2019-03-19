@@ -10,6 +10,7 @@ header {
     background-attachment: fixed;
     text-align: center;
     color: #ffffff;
+    position: relative;
 
     h1 {
         font-size: 50px;
@@ -39,16 +40,26 @@ header {
     }
 }
 
+
+.home {
+    padding-top: 3rem;
+}
+
+.about {
+    padding-top: 0;
+}
+
 nav {
 
-    padding-top: 3rem;
+    .navbar {
+        height: 93px;
+        background-color: rgb(255, 255, 255);
+    }
 
     ul {
-        width: 71rem;
         text-align: center;
         margin: 0 auto;
         height: 4rem;
-        padding: 0;
 
         li {
             text-transform: uppercase;
@@ -120,30 +131,63 @@ nav {
         }
 
         .search-bar {
-          width: 4rem;
+          width: 8rem;
           text-align: left;
         }
 
         .cart {
           width: 4rem;
           text-align: right;
+          margin-right: 1rem;
         }
     }
 
-    .home-style li {
-        width: 7.4rem;
+    .home-style {
+        width: 71rem;
+        padding: 0;
+
+        li {
+            width: 7rem;
+        }
+
+        .search-bar {
+            width: 8rem;
+            text-align: left;
+        }
     }
 
     .list-style {
-
-        .search-bar {
-          width: 10rem;
-          margin-right: 12rem;
-          text-align: left;
-        }
+        width: 71rem;
+        padding: 0;
+        padding-top: 1.5rem;
 
         li {
-          width: 6rem;
+          width: 5rem;
+          
+            a {
+                color: grey;
+
+                span {
+                    background: rgb(0, 0, 0);
+                }
+            }
+
+            span {
+                color: rgb(0, 0, 0);
+            }
+        }
+
+        .search-bar {
+            margin-right: 15rem;
+        }
+
+        .cart {
+            margin-left: 9rem;
+            margin-right: 0;
+
+            i {
+                color: grey;
+            }
         }
     }
 }
@@ -197,6 +241,13 @@ section {
 footer {
     height: 26.5625rem;
     background-color: #2d2827;
+
+    .contact {
+
+        span {
+            padding-right: 0.4rem;
+        }
+    }
 
     p {
         font-family: "Source Sans Pro";
