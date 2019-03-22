@@ -49,10 +49,34 @@ footer {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////THIS IS THE ABOUT SECTION////////////////////////////////////////////////
 .container-info {
     display: grid;
-    grid-template-columns: repeat(2, 600px);
+    grid-template-columns: 570px 600px;
     grid-template-rows: 490px;
-    width: 72rem;
+    width: 73.125rem;
     padding-top: 60px;
-    grid-gap: 1rem;
     margin: auto;
+}
+
+.team {
+
+    article {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        margin: auto;
+        width: 73.125rem;
+    }
+}
+
+.what-we-do {
+
+    .container {
+        display: grid;
+        grid-template-columns: 600px 570px;
+        grid-template-rows: 490px;
+        width: 73.125rem;
+        padding-top: 60px;
+        margin: auto;
+        padding-bottom: 6rem;
+    }
 }
