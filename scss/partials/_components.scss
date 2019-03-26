@@ -5,11 +5,6 @@
     src: url(../fonts/SourceSansPro-Light.ttf);
 }
 
-// @font-face {
-//     font-family: "Dosis";
-//     src: url(../fonts/Dosis-Regular.ttf);
-// }
-
 .search-bar,
 .cart {
 
@@ -45,8 +40,6 @@
 
 .hero {
     height: 445px;
-    background: url(../images/dark.jpg);
-    background-attachment: fixed;
 
     h2 {
         font-family: "Source Sans Pro";
@@ -60,7 +53,6 @@
     }
 
     p {
-        font-family: "Source Sans Pro";
         font-size: 15px;
         font-weight: 600;
         line-height: 1.4;
@@ -69,13 +61,14 @@
     }
 }
 
-// .hero-contact {
-//     background: url(../images/dark.jpg);
-//     background-attachment: fixed;
-// }
+.hero-contact {
+    background: url(../images/dark.jpg);
+    background-attachment: fixed;
+}
 
-// .hero-about {
-//     background: url(../images/adults-black-and-white-casual-1374542.jpg);
-//     background-attachment: fixed;
-// }
+.hero-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.658), rgb(0, 0, 0)), url(../images/adults-black-and-white-casual-1374542.jpg);
+    background-size: 100% 46rem;
+    background-attachment: fixed;
+}
 

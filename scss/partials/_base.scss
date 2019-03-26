@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+p {
+    font-family: "Source Sans Pro";
+}
+
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../images/black-and-white-2558273_1920.jpg);
     background-size: 100% 56rem;
@@ -20,7 +24,6 @@ header {
     }
 
     p {
-        font-family: "Source Sans Pro";
         font-size: 15px;
         line-height: 8px;
         color: #e6e6e6;
@@ -220,7 +223,6 @@ section {
         }
 
         p {
-            font-family: "Source Sans Pro";
             font-size: 15px;
             line-height: 1.6;
             color: #ffffff;
@@ -250,7 +252,6 @@ footer {
     }
 
     p {
-        font-family: "Source Sans Pro";
         font-size: 15px;
         line-height: 1.6;
         color: grey;
@@ -292,7 +293,6 @@ footer {
     .links p:nth-child(1),
     .shop p:nth-child(1),
     .instagram p {
-        font-family: "Source Sans Pro";
         font-size: 18px;
         font-weight: bold;
         line-height: 1.33;

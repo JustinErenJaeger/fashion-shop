@@ -32,7 +32,7 @@
 footer {
     .container {
         display: grid;
-        grid-template-columns: 30% 20% 20% 30%;
+        grid-template-columns: 30% 19% 19% 32%;
         width: 73.375rem;
         margin: auto;
         padding-top: 60px;
@@ -80,3 +80,33 @@ footer {
         padding-bottom: 6rem;
     }
 }
+
+// THIS IS THE STYLES FOR THE CONTACT PAGE
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 73.125rem;
+    margin: auto;
+    margin-top: 3.75rem;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.875rem;
+    width: 73.125rem;
+    margin: auto;
+    margin-top: 74px;
+    margin-bottom: 6.25rem;
+}
+
+.blog-content {
+    padding-top: 2rem;
+    display: grid;
+    grid-gap: 1.875rem;
+    grid-template-columns: repeat(3, 23.125rem);
+    margin: auto;
+    width: 73.375rem;
+    margin-bottom: 6.25rem;
+}
+

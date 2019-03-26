@@ -23,9 +23,7 @@
     bottom: 3%;
     opacity: 1; } }
 .hero {
-  height: 445px;
-  background: url(../images/dark.jpg);
-  background-attachment: fixed; }
+  height: 445px; }
   .hero h2 {
     font-family: "Source Sans Pro";
     font-size: 50px;
@@ -36,16 +34,27 @@
     padding-top: 10rem;
     margin: 0; }
   .hero p {
-    font-family: "Source Sans Pro";
     font-size: 15px;
     font-weight: 600;
     line-height: 1.4;
     text-align: center;
     color: white; }
 
+.hero-contact {
+  background: url(../images/dark.jpg);
+  background-attachment: fixed; }
+
+.hero-about {
+  background: linear-gradient(rgba(0, 0, 0, 0.658), black), url(../images/adults-black-and-white-casual-1374542.jpg);
+  background-size: 100% 46rem;
+  background-attachment: fixed; }
+
 body {
   margin: 0;
   padding: 0; }
+
+p {
+  font-family: "Source Sans Pro"; }
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url(../images/black-and-white-2558273_1920.jpg);
@@ -61,7 +70,6 @@ header {
     font-family: "Dosis";
     margin-top: 13.8125rem; }
   header p {
-    font-family: "Source Sans Pro";
     font-size: 15px;
     line-height: 8px;
     color: #e6e6e6; }
@@ -195,7 +203,6 @@ section {
       font-size: 3rem;
       color: #ffffff; }
     section .info p {
-      font-family: "Source Sans Pro";
       font-size: 15px;
       line-height: 1.6;
       color: #ffffff; }
@@ -214,7 +221,6 @@ footer {
   footer .contact span {
     padding-right: 0.4rem; }
   footer p {
-    font-family: "Source Sans Pro";
     font-size: 15px;
     line-height: 1.6;
     color: grey; }
@@ -243,7 +249,6 @@ footer {
   footer .links p:nth-child(1),
   footer .shop p:nth-child(1),
   footer .instagram p {
-    font-family: "Source Sans Pro";
     font-size: 18px;
     font-weight: bold;
     line-height: 1.33;
@@ -262,7 +267,6 @@ footer {
   height: 53px;
   background-color: #2d2827; }
   .bar div p {
-    font-family: "Source Sans Pro";
     color: #999999; }
 
 .currency {
@@ -315,7 +319,6 @@ footer {
 .content p {
   font-weight: 600;
   text-align: center;
-  font-family: "Source Sans Pro";
   margin: 0.5rem 0; }
 
 .description {
@@ -405,7 +408,6 @@ footer {
   height: 29.3125rem;
   position: relative; }
   .imgBox-2 p {
-    font-family: "Source Sans Pro";
     font-size: 25px;
     line-height: 1.92;
     letter-spacing: 2.5px;
@@ -419,8 +421,7 @@ footer {
     .imgBox-2 .img-2 img {
       width: 110%;
       height: 23.3125rem;
-      transition: all 0.3s ease-in-out;
-      filter: blur(1px); }
+      transition: all 0.3s ease-in-out; }
     .imgBox-2 .img-2 span {
       position: absolute;
       background: rgba(0, 0, 0, 0.596);
@@ -439,24 +440,18 @@ footer {
       border-right: 5px solid white; }
 
 .imgBox-2:hover img {
-  transform: scale(1.1);
-  filter: blur(0); }
+  transform: scale(1.1); }
 
 .imgBox-2:hover .fade-1 {
-  width: 0; }
+  width: 0;
+  height: 0; }
 
 .imgBox-2:hover .fade-2 {
-  width: 0; }
-
-.imgBox-2:hover .fade-3 {
-  width: 0; }
-
-.imgBox-2:hover .fade-4 {
-  width: 0; }
+  width: 0;
+  height: 0; }
 
 .blog-section {
-  height: 32.9375rem;
-  font-family: "Source Sans Pro"; }
+  height: 32.9375rem; }
   .blog-section .blog-img {
     position: relative; }
     .blog-section .blog-img img {
@@ -505,7 +500,6 @@ footer {
   left: 50%;
   transform: translateX(-50%); }
 .summary-info .container-info .info p {
-  font-family: "Source Sans Pro";
   font-size: 15px;
   line-height: 1.67;
   color: grey; }
@@ -534,7 +528,7 @@ footer {
     width: 16.875rem;
     height: 19.0625rem;
     background-color: #666666; }
-    .team article .members .img .img {
+    .team article .members .img img {
       width: 100%;
       height: 100%; }
   .team article .members p:nth-child(2) {
@@ -612,6 +606,114 @@ footer {
   .what-we-do .container .info p:nth-child(3) {
     height: 136px; }
 
+.contact-info .con {
+  width: 24.375rem;
+  height: 12.5rem;
+  border: solid 1px #e6e6e6;
+  background-color: #f0f0f0;
+  text-align: center; }
+  .contact-info .con i {
+    font-size: 36px;
+    color: #090803; }
+  .contact-info .con p {
+    font-size: 15px;
+    color: #666666; }
+  .contact-info .con .text {
+    font-size: 20px;
+    color: #333333;
+    font-weight: 600;
+    letter-spacing: 1.3px; }
+  .contact-info .con .center {
+    padding-top: 1.5rem; }
+.contact-info .details {
+  margin: 0; }
+  .contact-info .details div {
+    position: relative;
+    height: 100px; }
+    .contact-info .details div p {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%); }
+  .contact-info .details div:nth-child(1) {
+    border-bottom: 1px solid #e6e6e6; }
+
+.form div {
+  width: 50%; }
+  .form div input {
+    width: 35.625rem;
+    height: 3.125rem;
+    border: solid 1px #e6e6e6; }
+  .form div input::placeholder {
+    font-size: 15px;
+    text-align: left;
+    color: #888888;
+    font-family: "Source Sans Pro";
+    padding-left: 1.1875rem; }
+.form .comment {
+  grid-column: -1/1; }
+  .form .comment textarea {
+    width: 73.125rem;
+    height: 9.375rem;
+    border: solid 1px #e6e6e6;
+    outline: none; }
+  .form .comment textarea[id="text"] {
+    font-family: "Source Sans Pro";
+    font-size: 3rem; }
+  .form .comment textarea::placeholder {
+    color: #888888;
+    font-family: "Source Sans Pro";
+    font-size: 15px;
+    padding-left: 1.1875rem;
+    padding-top: 1.25rem; }
+.form button {
+  width: 9.6875rem;
+  height: 2.5rem;
+  background-color: #a88d7b;
+  border: none;
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 1.5px; }
+
+.links {
+  width: 100%;
+  height: 3.125rem;
+  position: relative; }
+  .links p {
+    position: absolute;
+    width: 8rem; }
+  .links p:nth-child(1) {
+    left: 0; }
+  .links p:nth-child(2) {
+    right: 0; }
+
+.blog-content .img {
+  width: 23.125rem;
+  height: 14.0625rem;
+  background-color: #666666; }
+  .blog-content .img img {
+    width: 100%;
+    height: 100%; }
+.blog-content p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.4;
+  color: black; }
+.blog-content p:nth-child(3) {
+  font-size: 15px;
+  color: #999999; }
+.blog-content p:nth-child(5) {
+  font-size: 15px;
+  color: #666666; }
+.blog-content p:nth-child(6) {
+  font-size: 15px;
+  font-weight: 600;
+  color: #706259; }
+.blog-content hr {
+  border: 0.5px solid #e6e6e6; }
+
 .top-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -640,7 +742,7 @@ footer {
 
 footer .container {
   display: grid;
-  grid-template-columns: 30% 20% 20% 30%;
+  grid-template-columns: 30% 19% 19% 32%;
   width: 73.375rem;
   margin: auto;
   padding-top: 60px; }
@@ -674,5 +776,30 @@ footer .container {
   padding-top: 60px;
   margin: auto;
   padding-bottom: 6rem; }
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 73.125rem;
+  margin: auto;
+  margin-top: 3.75rem; }
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.875rem;
+  width: 73.125rem;
+  margin: auto;
+  margin-top: 74px;
+  margin-bottom: 6.25rem; }
+
+.blog-content {
+  padding-top: 2rem;
+  display: grid;
+  grid-gap: 1.875rem;
+  grid-template-columns: repeat(3, 23.125rem);
+  margin: auto;
+  width: 73.375rem;
+  margin-bottom: 6.25rem; }
 
 /*# sourceMappingURL=main.css.map */
