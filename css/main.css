@@ -58,6 +58,11 @@
   background-attachment: fixed;
   background-size: 100% 50rem; }
 
+.hero-shop {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/three-females.jpg);
+  background-attachment: fixed;
+  background-size: 100% 50rem; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -766,6 +771,51 @@ footer {
 .gallery .item-15 {
   grid-column: span 2; }
 
+.products-list .product {
+  position: relative; }
+  .products-list .product .img {
+    width: 18.75rem;
+    height: 18.75rem;
+    background-color: #666666; }
+    .products-list .product .img img {
+      width: 100%;
+      height: 100%; }
+  .products-list .product .info {
+    padding-left: 3.25rem; }
+    .products-list .product .info p {
+      margin: 0; }
+    .products-list .product .info p:nth-child(1) {
+      font-size: 20px;
+      font-weight: 600;
+      color: black;
+      padding-top: 0.5rem; }
+    .products-list .product .info p:nth-child(2) {
+      font-size: 15px;
+      color: #999999;
+      padding-top: 26px; }
+    .products-list .product .info p:nth-child(3) {
+      font-size: 15px;
+      color: #666666;
+      padding-top: 40px; }
+    .products-list .product .info button {
+      width: 180px;
+      height: 44px;
+      background: #ac907f;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      color: #ffffff;
+      border: none;
+      outline: none;
+      margin-top: 47px; }
+      .products-list .product .info button i {
+        padding-right: 0.4rem; }
+  .products-list .product span {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    font-size: 20px;
+    color: #999999; }
+
 .top-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -858,5 +908,13 @@ footer .container {
   display: grid;
   grid-gap: 0.1rem;
   grid-template-columns: repeat(4, 1fr); }
+
+.products-list {
+  padding-bottom: 12.5rem; }
+  .products-list .product {
+    display: grid;
+    grid-template-columns: 18.75rem auto;
+    margin: 3.75rem auto 0 auto;
+    width: 73.375rem; }
 
 /*# sourceMappingURL=main.css.map */

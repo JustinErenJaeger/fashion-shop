@@ -117,3 +117,16 @@ footer {
     grid-template-columns: repeat(4, 1fr);
 }
 
+
+// THIS IS THE STYLES FOR THE SHOP PAGE
+.products-list {
+    padding-bottom: 12.5rem;
+
+    .product {
+        display: grid;
+        grid-template-columns: 18.75rem auto;
+        margin: 3.75rem auto 0 auto;
+        width: 73.375rem;
+    }
+}
+
