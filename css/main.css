@@ -681,8 +681,7 @@ footer {
     border: solid 1px #e6e6e6;
     outline: none; }
   .form .comment textarea[id="text"] {
-    font-family: "Source Sans Pro";
-    font-size: 3rem; }
+    font-family: "Source Sans Pro"; }
   .form .comment textarea::placeholder {
     color: #888888;
     font-family: "Source Sans Pro";
@@ -749,7 +748,7 @@ footer {
     height: 100%; }
 .gallery .item-1 {
   grid-column: span 2; }
-.gallery .item-3 {
+.gallery .item-4 {
   grid-column: span 2; }
 .gallery .item-6 {
   grid-column: span 2; }
