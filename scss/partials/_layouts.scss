@@ -100,7 +100,7 @@ footer {
     margin-bottom: 6.25rem;
 }
 
-.blog-content {
+.blog-info {
     padding-top: 2rem;
     display: grid;
     grid-gap: 1.875rem;
@@ -113,6 +113,7 @@ footer {
 // THIS IS THE LAYOUT FOR THE LOOKBOOK PAGE
 .gallery {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.1rem;
+    grid-template-columns: repeat(4, 1fr);
 }
 

@@ -641,7 +641,7 @@
         right: -1.5rem;
     }
 }
-.blog-content {
+.blog-info {
 
     .img {
         width: 23.125rem;
@@ -688,5 +688,34 @@
 
     div {
         overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .item-1 {
+        grid-column: span 2;
+    }
+
+    .item-3 {
+        grid-column: span 2;
+    }
+
+    .item-6 {
+        grid-column: span 2;
+    }
+
+    .item-7 {
+        grid-column: span 2;
+    }
+
+    .item-13 {
+        grid-column: span 2;
+    }
+
+    .item-15 {
+        grid-column: span 2;
     }
 }
