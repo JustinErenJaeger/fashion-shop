@@ -616,14 +616,21 @@
 }
 
 // THIS IS THE STYLES FOR THE BLOG PAGE
-.links {
-    width: 100%;
+.social {
+    width: 73.3rem;
     height: 3.125rem;
+    margin: auto;
     position: relative;
 
     p {
         position: absolute;
-        width: 8rem;
+        width: 10rem;
+
+        i {
+            padding: 0 0.2rem;
+            font-size: 15px;
+            color: #666666;
+        }
     }
 
     p:nth-child(1) {
@@ -631,7 +638,7 @@
     }
 
     p:nth-child(2) {
-        right: 0;
+        right: -1.5rem;
     }
 }
 .blog-content {
@@ -672,5 +679,14 @@
 
     hr {
         border: 0.5px solid #e6e6e6;
+    }
+}
+
+
+// THIS IS THE STYLES FOR THE LOOKBOOK PAGE
+.gallery {
+
+    div {
+        overflow: hidden;
     }
 }

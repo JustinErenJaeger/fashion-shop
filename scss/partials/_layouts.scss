@@ -110,3 +110,9 @@ footer {
     margin-bottom: 6.25rem;
 }
 
+// THIS IS THE LAYOUT FOR THE LOOKBOOK PAGE
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+

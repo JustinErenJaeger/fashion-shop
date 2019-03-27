@@ -169,10 +169,28 @@ nav {
           
             a {
                 color: grey;
+                position: relative;
 
                 span {
                     background: rgb(0, 0, 0);
+                    opacity: 0;
                 }
+            }
+
+            a::before {
+                content: "";
+                position: absolute;
+                background: rgb(0, 0, 0);
+                bottom: 0;
+                width: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 1px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            a:hover::before {
+                width: 100%;
             }
 
             span {

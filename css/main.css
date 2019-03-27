@@ -49,6 +49,15 @@
   background-size: 100% 46rem;
   background-attachment: fixed; }
 
+.hero-blog {
+  background: linear-gradient(rgba(0, 0, 0, 0.849), rgba(0, 0, 0, 0.445)), url(../images/girl-red-lips.jpg);
+  background-attachment: fixed; }
+
+.hero-lookbook {
+  background: linear-gradient(rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.61)), url(../images/guy-in-street.jpg);
+  background-attachment: fixed;
+  background-size: 100% 50rem; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -167,9 +176,23 @@ nav .list-style {
   nav .list-style li {
     width: 5rem; }
     nav .list-style li a {
-      color: grey; }
+      color: grey;
+      position: relative; }
       nav .list-style li a span {
-        background: black; }
+        background: black;
+        opacity: 0; }
+    nav .list-style li a::before {
+      content: "";
+      position: absolute;
+      background: black;
+      bottom: 0;
+      width: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      transition: all 0.3s ease-in-out; }
+    nav .list-style li a:hover::before {
+      width: 100%; }
     nav .list-style li span {
       color: black; }
   nav .list-style .search-bar {
@@ -677,17 +700,22 @@ footer {
   font-size: 15px;
   letter-spacing: 1.5px; }
 
-.links {
-  width: 100%;
+.social {
+  width: 73.3rem;
   height: 3.125rem;
+  margin: auto;
   position: relative; }
-  .links p {
+  .social p {
     position: absolute;
-    width: 8rem; }
-  .links p:nth-child(1) {
+    width: 10rem; }
+    .social p i {
+      padding: 0 0.2rem;
+      font-size: 15px;
+      color: #666666; }
+  .social p:nth-child(1) {
     left: 0; }
-  .links p:nth-child(2) {
-    right: 0; }
+  .social p:nth-child(2) {
+    right: -1.5rem; }
 
 .blog-content .img {
   width: 23.125rem;
@@ -713,6 +741,9 @@ footer {
   color: #706259; }
 .blog-content hr {
   border: 0.5px solid #e6e6e6; }
+
+.gallery div {
+  overflow: hidden; }
 
 .top-bar {
   display: grid;
@@ -801,5 +832,9 @@ footer .container {
   margin: auto;
   width: 73.375rem;
   margin-bottom: 6.25rem; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
 
 /*# sourceMappingURL=main.css.map */
