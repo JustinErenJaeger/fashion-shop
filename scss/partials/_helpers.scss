@@ -145,16 +145,16 @@
         .fade-1 {
             top: 0;
             right: 0;
-            border-left: 5px solid rgb(255, 255, 255);
-            border-bottom: 5px solid rgb(255, 255, 255);
+            border-left: 10px solid rgb(255, 255, 255);
+            border-bottom: 10px solid rgb(255, 255, 255);
         }
 
 
         .fade-2 {
             bottom: 0;
             left: 0;
-            border-top: 5px solid rgb(255, 255, 255);
-            border-right: 5px solid rgb(255, 255, 255);
+            border-top: 10px solid rgb(255, 255, 255);
+            border-right: 10px solid rgb(255, 255, 255);
         }
     }
 }
@@ -162,6 +162,7 @@
 .imgBox-1:hover span {
     width: 0;
     height: 0;
+    opacity: 0;
 }
 
 .imgBox-1:hover img {
@@ -229,15 +230,15 @@
         .fade-1 {
             top: 0;
             right: 0;
-            border-bottom: 5px solid rgb(255, 255, 255);
-            border-left: 5px solid rgb(255, 255, 255);
+            border-bottom: 10px solid rgb(255, 255, 255);
+            border-left: 10px solid rgb(255, 255, 255);
         }
 
         .fade-2 {
             bottom: 0;
             left: 0;
-            border-top: 5px solid rgb(255, 255, 255);
-            border-right: 5px solid rgb(255, 255, 255);
+            border-top: 10px solid rgb(255, 255, 255);
+            border-right: 10px solid rgb(255, 255, 255);
         }
     }
 }
@@ -246,15 +247,12 @@
    transform: scale(1.1);
 }
 
-.imgBox-2:hover .fade-1 {
+.imgBox-2:hover span {
     width: 0;
     height: 0;
+    opacity: 0;
 }
 
-.imgBox-2:hover .fade-2 {
-    width: 0;
-    height: 0;
-}
 
 // THIS IS THE STYLES FOR THE BLOG SECTION ON THE HOME PAGE
 .blog-section {
