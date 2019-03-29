@@ -130,3 +130,11 @@ footer {
     }
 }
 
+.cart {
+
+    .item {
+        display: grid;
+        grid-template-columns: 12rem 18rem;
+    }
+}
+

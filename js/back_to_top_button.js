@@ -9,4 +9,4 @@ function scrollFunction() {
     } else {
         btn.style.opacity = "0";
     }
-}    
+};

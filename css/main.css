@@ -825,6 +825,17 @@ footer {
     font-size: 20px;
     color: #999999; }
 
+.cart {
+  background: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30rem; }
+  .cart .item .img {
+    width: 4rem;
+    height: 4rem; }
+
 .top-bar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -925,5 +936,9 @@ footer .container {
     grid-template-columns: 18.75rem auto;
     margin: 3.75rem auto 0 auto;
     width: 73.375rem; }
+
+.cart .item {
+  display: grid;
+  grid-template-columns: 12rem 18rem; }
 
 /*# sourceMappingURL=main.css.map */

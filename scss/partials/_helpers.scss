@@ -786,3 +786,20 @@
         }
     }
 }
+
+.cart {
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    right:0;
+    bottom: 0;
+    width: 30rem;
+
+    .item {
+        
+        .img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}
