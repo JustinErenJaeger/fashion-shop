@@ -795,11 +795,12 @@
     bottom: 0;
     width: 30rem;
 
-    .item {
+    .cart-item {
         
-        .img {
-            width: 4rem;
-            height: 4rem;
+        .cart-img {
+            width: 8rem;
+            height: 8rem;
+            background: rgb(129, 129, 129);
         }
     }
 }

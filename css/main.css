@@ -832,9 +832,10 @@ footer {
   right: 0;
   bottom: 0;
   width: 30rem; }
-  .cart .item .img {
-    width: 4rem;
-    height: 4rem; }
+  .cart .cart-item .cart-img {
+    width: 8rem;
+    height: 8rem;
+    background: #818181; }
 
 .top-bar {
   display: grid;
@@ -937,7 +938,7 @@ footer .container {
     margin: 3.75rem auto 0 auto;
     width: 73.375rem; }
 
-.cart .item {
+.cart .cart-item {
   display: grid;
   grid-template-columns: 12rem 18rem; }
 
