@@ -30,7 +30,7 @@
                 <p>FREE SHIPPING FOR STANDARD ORDER OVER R100</p>
             </div>
             <div class="icons">
-                <p>ZAR<i class="fas fa-angle-down"></i></p>
+                <p onclick="toggleCart()">ZAR<i class="fas fa-angle-down"></i></p>
             </div>
         </div>
     </article>
@@ -76,69 +76,64 @@
     <main class="products-list">
         <div class="product">
             <div class="img">
-                <img src="images/products/denim-jeans.jpg" alt="" id="image-1" class="image">
+                <img src="" alt="" id="image-1" class="shop-item-image">
             </div>
             <div class="info">
-                <p id="product-1" class="title">jfhjkwhg</p>
-                <p id="price-1" class="price">price</p>
-                <p id="description-1"></p>
-                <button id="addToCart" class="shop-btn"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
-                <button id="addToCart" class="btn-remove"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+                <p id="product-1" class="shop-item-title"></p>
+                <p id="price-1" class="shop-item-price"></p>
+                <p id="discription-1"></p>
+                <button id="addToCart" class="shop-item-button"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
             </div>
             <span class="lnr lnr-heart"></span>
         </div>
         <div class="product">
             <div class="img">
-                <img src="" alt="" id="image-2">
+                <img src="" alt="" id="image-2" class="shop-item-image">
             </div>
             <div class="info">
-                <p id="product-2" class="name"></p>
-                <p id="price-2" class="price"></p>
-                <p id="description-2"></p>
-                <button id="addToCart" class="shop-btn"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
-                <button id="addToCart" class="btn-remove"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+                <p id="product-2" class="shop-item-title"></p>
+                <p id="price-2" class="shop-item-price"></p>
+                <p id="discription-2"></p>
+                <button id="addToCart" class="shop-item-button"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
             </div>
             <span class="lnr lnr-heart"></span>
         </div>
         <div class="product">
             <div class="img">
-                <img src="" alt="" id="image-3">
+                <img src="" alt="" id="image-3" class="shop-item-image">
             </div>
             <div class="info">
-                <p id="product-3"></p>
-                <p id="price-3"></p>
-                <p id="description-3"></p>
-                <button id="addToCart" class="shop-btn"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
-                <button id="addToCart" class="btn-remove"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+                <p id="product-3" class="shop-item-title"></p>
+                <p id="price-3" class="shop-item-price"></p>
+                <p id="discription-3"></p>
+                <button id="addToCart" class="shop-item-button"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
             </div>
             <span class="lnr lnr-heart"></span>
         </div>
         <div class="product">
             <div class="img">
-                <img src="" alt="" id="image-4">
+                <img src="" alt="" id="image-4" class="shop-item-image">
             </div>
             <div class="info">
-                <p id="product-4"></p>
-                <p id="price-4"></p>
-                <p id="description-4"></p>
-                <button id="addToCart" class="shop-btn"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
-                <button id="addToCart" class="btn-remove"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+                <p id="product-4" class="shop-item-title"></p>
+                <p id="price-4" class="shop-item-price"></p>
+                <p id="discription-4"></p>
+                <button id="addToCart" class="shop-item-button"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
             </div>
             <span class="lnr lnr-heart"></span>
         </div>
     </main>
 
-    <main class="cart" id="shop-cart">
-        <!-- <div class="cart-item">
-            <div class="cart-img">
-                <img src="" alt="" id="image-1">
+    <main class="shopping-cart" id="cart">
+        <div class="perspective-menu">
+            <div id="close-cart" onclick="toggleCart()">CLOSE X</div>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <p class="cart-total-title">TOTAL COST</p>
+                <p class="cart-total-price">0</p>
+                <button class="btn-purchase" type="button">PURCHASE</button>
             </div>
-            <div class="cart-info">
-                <p class="cart-title">Jacket</p>
-                <p class="cart-price">R20</p>
-                <button class="btn-remove">REMOVE</button>
-            </div>
-        </div> -->
+        </div>
     </main>
 
     <!-- THIS IS THE FOOTER WITH LINKS AND INSTAGRAM IMAGES -->
@@ -211,8 +206,13 @@
     </footer>
     <div class="footer">
         <p>Copyright © 2019 Designed by nate_nonpareils. All rights reserved.</p>
+        <div id="backToTop">
+            <i class="fas fa-arrow-circle-up"></i>
+        </div>
     </div>
     <script src="js/main.js"></script>
     <script src="js/add-to-cart.js"></script>
+    <script src="js/cart_toggle.js" charset="utf-8"></script>
+    <script src="js/back_to_top_button.js" charset="utf-8"></script>
 </body>
 </html>

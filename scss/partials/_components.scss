@@ -61,6 +61,15 @@
     }
 }
 
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    background: red;
+    z-index: 1000;
+}
+
 .hero-contact {
     background: url(../images/dark.jpg);
     background-attachment: fixed;
@@ -88,4 +97,3 @@
     background-attachment: fixed;
     background-size: 100% 50rem;
 }
-

@@ -3,9 +3,9 @@ function Products(name, price, description, image) {
     this.price = price;
     this.description = description;
     this.image = image;
-};
+}
 
-let item1 = new Products("Jacket", "R2000", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/denim-jeans.jpg");
+let item1 = new Products("Jacket", "R599.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/denim-jeans.jpg");
 
 let jacket = document.getElementById("product-1");
     amount = document.getElementById("price-1");
@@ -18,7 +18,7 @@ let jacket = document.getElementById("product-1");
     img.src = item1.image;
 
 
-let item2 = new Products("Glasses", "R1000", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/gold-framed-glasses.jpg");
+let item2 = new Products("Glasses", "R1199.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/gold-framed-glasses.jpg");
 
 let glasses = document.getElementById("product-2");
     amount = document.getElementById("price-2");
@@ -31,7 +31,7 @@ let glasses = document.getElementById("product-2");
     img.src = item2.image;
 
 
-let item3 = new Products("Cap", "R500", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/cap.jpg");
+let item3 = new Products("Cap", "R249.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/cap.jpg");
 
 let cap = document.getElementById("product-3");
     amount = document.getElementById("price-3");
@@ -41,9 +41,9 @@ let cap = document.getElementById("product-3");
     cap.innerHTML = item3.name;
     amount.innerHTML = item3.price;
     info.innerHTML = item3.description;
-    img.src = item3.image;    
+    img.src = item3.image;
 
-let item4 = new Products("Flannel Jacket", "R250", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/flannel-jacket.jpg");
+let item4 = new Products("Flannel Jacket", "R899.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/flannel-jacket.jpg");
 
 let flannel = document.getElementById("product-4");
     amount = document.getElementById("price-4");
@@ -53,4 +53,4 @@ let flannel = document.getElementById("product-4");
     flannel.innerHTML = item4.name;
     amount.innerHTML = item4.price;
     info.innerHTML = item4.description;
-    img.src = item4.image;    
+    img.src = item4.image;

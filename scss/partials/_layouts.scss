@@ -130,11 +130,15 @@ footer {
     }
 }
 
-.cart {
+.shopping-cart {
 
-    .cart-item {
+    .perspective-menu {
         display: grid;
-        grid-template-columns: 12rem 18rem;
+        grid-template-rows: auto 8rem;
+    }
+
+    .cart-total {
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 }
-
