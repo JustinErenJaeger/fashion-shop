@@ -63,11 +63,22 @@
 
 #close-cart {
     position: absolute;
-    top: 1rem;
+    top: 0;
     right: 1rem;
     padding: 1rem;
-    background: red;
     z-index: 1000;
+
+    i {
+        font-size: 2rem;
+        color: #ac907f;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.66);
+        transition: all 0.2s ease-in-out;
+    }
+
+    i:hover {
+        text-shadow: 9px 9px 5px rgba(0, 0, 0, 0.66);
+        color: #785e4e;
+    }
 }
 
 .hero-contact {

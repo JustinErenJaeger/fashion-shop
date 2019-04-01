@@ -30,7 +30,7 @@
                 <p>FREE SHIPPING FOR STANDARD ORDER OVER R100</p>
             </div>
             <div class="icons">
-                <p onclick="toggleCart()">ZAR<i class="fas fa-angle-down"></i></p>
+                <p>ZAR<i class="fas fa-angle-down"></i></p>
             </div>
         </div>
     </article>
@@ -59,7 +59,7 @@
                     <a href="lookbook.html">Lookbook</a>
                 </li>
                 <li class="cart">
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-shopping-cart" onclick="toggleCart()"></i>
                     <i class="lnr lnr-magnifier"></i>
                 </li>
             </ul>
@@ -84,7 +84,7 @@
                 <p id="discription-1"></p>
                 <button id="addToCart" class="shop-item-button"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
             </div>
-            <span class="lnr lnr-heart"></span>
+            <span class="lnr lnr-heart" id="heart"></span>
         </div>
         <div class="product">
             <div class="img">
@@ -96,7 +96,7 @@
                 <p id="discription-2"></p>
                 <button id="addToCart" class="shop-item-button"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
             </div>
-            <span class="lnr lnr-heart"></span>
+            <span class="lnr lnr-heart" id="heart"></span>
         </div>
         <div class="product">
             <div class="img">
@@ -108,7 +108,7 @@
                 <p id="discription-3"></p>
                 <button id="addToCart" class="shop-item-button"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
             </div>
-            <span class="lnr lnr-heart"></span>
+            <span class="lnr lnr-heart" id="heart"></span>
         </div>
         <div class="product">
             <div class="img">
@@ -120,13 +120,13 @@
                 <p id="discription-4"></p>
                 <button id="addToCart" class="shop-item-button"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
             </div>
-            <span class="lnr lnr-heart"></span>
+            <span class="lnr lnr-heart" id="heart"></span>
         </div>
     </main>
 
     <main class="shopping-cart" id="cart">
         <div class="perspective-menu">
-            <div id="close-cart" onclick="toggleCart()">CLOSE X</div>
+            <div id="close-cart" onclick="toggleCart()"><i class="fas fa-times-circle"></i></div>
             <div class="cart-items"></div>
             <div class="cart-total">
                 <p class="cart-total-title">TOTAL COST</p>
@@ -193,14 +193,30 @@
             </article>
             <article class="instagram">
                 <p>INSTAGRAM</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <img src="images/instagram/adolescent-beautiful-beauty-247878.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/adult-business-contemporary-1405963.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/attractive-beautiful-beauty-1975938.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/black-leather-jacket-chair-dark-447185.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/beautiful-beauty-close-up-678781.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/beautiful-beauty-female-957882 (1).jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/beautiful-casual-clothing-206558.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/beautiful-woman-fashion-fashion-model-1926769.jpg" alt="">
+                </div>
             </article>
         </div>
     </footer>

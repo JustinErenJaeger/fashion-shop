@@ -73,11 +73,14 @@
     </main>
 
     <!-- THIS IS THE SECTION ABOUT THE CONTACT INFORMATION -->
-    <main class="contact-info">
+    <main class="contact-info" onclick="mapLocation()">
         <div class="con">
-            <p class="center"><i class="lnr lnr-map-marker"></i></p>
-            <p class="text">Our Address</p>
+            <p class="center"><i class="lnr lnr-map-marker" id="locationIcon"></i></p>
+            <p class="text loca">Our Address</p>
             <p>379 5th Ave, Rondebosch, CT 7700</p>
+            <span class="overlay">
+                <span>VIEW LOCATION</span>
+            </span>
         </div>
         <div class="con details">
             <div>
@@ -113,6 +116,10 @@
         </div>
         <button>SEND MAIL</button>
     </main>
+
+    <!-- GOOGLE MAP LOCATION -->
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.7642062686095!2d18.49589131521298!3d-33.97289958062762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4335e321a60d%3A0x3bbb63d91267b4bc!2s5th+Ave%2C+Cape+Town!5e0!3m2!1sen!2sza!4v1554124728808!5m2!1sen!2sza" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <i class="fas fa-times-circle" id="close-map"  onclick="mapLocation()"></i>
 
     <!-- THIS IS THE FOOTER WITH LINKS AND INSTAGRAM IMAGES -->
     <footer>
@@ -171,19 +178,36 @@
             </article>
             <article class="instagram">
                 <p>INSTAGRAM</p>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <img src="images/instagram/adolescent-beautiful-beauty-247878.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/adult-business-contemporary-1405963.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/attractive-beautiful-beauty-1975938.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/black-leather-jacket-chair-dark-447185.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/beautiful-beauty-close-up-678781.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/beautiful-beauty-female-957882 (1).jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/beautiful-casual-clothing-206558.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/instagram/beautiful-woman-fashion-fashion-model-1926769.jpg" alt="">
+                </div>
             </article>
         </div>
     </footer>
     <div class="footer">
         <p>Copyright © 2019 Designed by nate_nonpareils. All rights reserved.</p>
     </div>
+    <script src="js/cart_toggle.js"></script>
 </body>
 </html>

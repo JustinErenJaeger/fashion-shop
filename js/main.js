@@ -5,7 +5,7 @@ function Products(name, price, description, image) {
     this.image = image;
 }
 
-let item1 = new Products("Jacket", "R599.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/denim-jeans.jpg");
+let item1 = new Products("Jeans", "R599.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/denim-jeans.jpg");
 
 let jacket = document.getElementById("product-1");
     amount = document.getElementById("price-1");
