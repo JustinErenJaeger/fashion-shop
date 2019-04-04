@@ -67,7 +67,7 @@ function addItemToCart(title, price, imageSrc) {
   }
   let cartRowContents = `
   <div class="cart-item">
-      <img src="${imageSrc}" alt="" width="100x" height="100px" class="shop-item-image">
+      <img src="${imageSrc}" alt="" class="shop-item-image">
   </div>
   <div class="information">
       <p class="cart-item-title">${title}</p>
