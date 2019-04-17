@@ -142,29 +142,30 @@ nav ul {
       padding: 0.3rem 0.6rem; }
       nav ul li a span {
         position: absolute;
-        background: white; }
+        background: white;
+        z-index: 4; }
       nav ul li a .top {
         top: 0;
         left: 0;
-        height: 1px;
+        height: 2px;
         width: 0;
         transition: all 0.2s ease-in-out; }
       nav ul li a .right {
         top: 0;
         right: 0;
-        width: 1px;
+        width: 2px;
         height: 0;
         transition: all 0.2s ease-in-out 0.2s; }
       nav ul li a .bottom {
         right: 0;
         bottom: 0;
-        height: 1px;
+        height: 2px;
         width: 0;
         transition: all 0.2s ease-in-out 0.4s; }
       nav ul li a .left {
         bottom: 0;
         left: 0;
-        width: 1px;
+        width: 2px;
         height: 0;
         transition: 0.2s ease-in-out 0.6s; }
     nav ul li a:hover .top {
@@ -249,14 +250,14 @@ section {
     section .info p {
       font-size: 15px;
       line-height: 1.6;
-      color: #ffffff; }
-    section .info button {
+      color: #ffffff;
+      padding-bottom: 2rem; }
+    section .info a {
       font-family: "Source Sans Pro";
-      width: 9.375rem;
-      height: 2.5rem;
       background-color: #a88d7b;
-      border: none;
+      padding: 0.5rem 1rem;
       font-size: 15px;
+      text-decoration: none;
       color: #ffffff; }
 
 footer {
@@ -338,7 +339,7 @@ footer {
     color: #999999; }
 
 .currency {
-  font-size: 12px;
+  font-size: 15px;
   margin-top: 0.2rem;
   text-align: left; }
   .currency span {
@@ -530,23 +531,24 @@ footer {
     width: 529px;
     height: 239px;
     padding: 0.5rem 4rem; }
-  .blog-section p {
-    font-size: 25px;
-    font-weight: 600; }
-  .blog-section p:nth-child(2) {
-    font-size: 15px;
-    text-align: left;
-    color: #808080; }
-  .blog-section p:nth-child(3) {
-    font-size: 15px;
-    line-height: 1.67;
-    color: #666666;
-    padding-top: 1rem; }
-  .blog-section p:nth-child(4) {
-    font-size: 15px;
-    line-height: 3.2;
-    letter-spacing: 1.5px;
-    color: #a88d7b; }
+    .blog-section .blog-content p {
+      font-size: 25px;
+      font-weight: 600; }
+    .blog-section .blog-content p:nth-child(2) {
+      font-size: 15px;
+      text-align: left;
+      color: #808080; }
+    .blog-section .blog-content p:nth-child(3) {
+      font-size: 15px;
+      line-height: 1.67;
+      color: #666666;
+      padding-top: 1rem; }
+    .blog-section .blog-content a {
+      font-size: 15px;
+      text-decoration: none;
+      letter-spacing: 1.5px;
+      font-family: "Source Sans Pro";
+      color: #a88d7b; }
 
 .summary-info .container-info .info h2 {
   font-family: "Source Sans Pro";
@@ -848,21 +850,23 @@ footer {
   border: 0.5px solid #e6e6e6; }
 
 .gallery div {
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
   .gallery div img {
     width: 100%;
     height: 100%; }
 .gallery .item-1 {
   grid-column: span 2; }
-.gallery .item-4 {
-  grid-column: span 2; }
-.gallery .item-6 {
+.gallery .item-5 {
   grid-column: span 2; }
 .gallery .item-7 {
   grid-column: span 2; }
-.gallery .item-13 {
+.gallery .item-8 {
   grid-column: span 2; }
-.gallery .item-15 {
+.gallery .item-14 {
+  grid-column: span 2; }
+.gallery .item-16 {
   grid-column: span 2; }
 
 .products-list .product {
@@ -1093,7 +1097,7 @@ footer .container {
 
 .gallery {
   display: grid;
-  grid-gap: 0.1rem;
+  grid-gap: 0.2rem;
   grid-template-columns: repeat(4, 1fr); }
 
 .products-list {

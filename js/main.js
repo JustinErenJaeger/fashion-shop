@@ -3,9 +3,9 @@ function Products(name, price, description, image) {
     this.price = price;
     this.description = description;
     this.image = image;
-}
+};
 
-let item1 = new Products("Jeans", "R599.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/denim-jeans.jpg");
+let item1 = new Products("Jeans", "R599.99", "Feeling like you lost your groove? Well then get your self-esteem back with our new denim jeans complete with patches.", "images/products/denim-jeans.jpg");
 
 let jacket = document.getElementById("product-1");
     amount = document.getElementById("price-1");
@@ -18,7 +18,7 @@ let jacket = document.getElementById("product-1");
     img.src = item1.image;
 
 
-let item2 = new Products("Glasses", "R1199.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/gold-framed-glasses.jpg");
+let item2 = new Products("Glasses", "R1199.99", "If you feel like your future is too bright why not purchase these gold framed shades to block out that bright light.", "images/products/gold-framed-glasses.jpg");
 
 let glasses = document.getElementById("product-2");
     amount = document.getElementById("price-2");
@@ -31,7 +31,7 @@ let glasses = document.getElementById("product-2");
     img.src = item2.image;
 
 
-let item3 = new Products("Cap", "R249.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/cap.jpg");
+let item3 = new Products("Hat", "R249.99", "Is the sun too hot and won't even give you a break? Well then purchase our new and fresh Straight out of programming hat.", "images/products/cap.jpg");
 
 let cap = document.getElementById("product-3");
     amount = document.getElementById("price-3");
@@ -43,7 +43,7 @@ let cap = document.getElementById("product-3");
     info.innerHTML = item3.description;
     img.src = item3.image;
 
-let item4 = new Products("Flannel Jacket", "R899.99", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint in fuga eos illo, tempora cumque sunt praesentium tenetur voluptatibus aliquam?", "images/products/flannel-jacket.jpg");
+let item4 = new Products("Flannel Jacket", "R899.99", "So the cold who's boss with our new flannel jacket with some of the newest insulation.", "images/products/flannel-jacket.jpg");
 
 let flannel = document.getElementById("product-4");
     amount = document.getElementById("price-4");
